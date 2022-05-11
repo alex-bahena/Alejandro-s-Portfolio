@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/design.css" />
+  
+
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/Logo.portafolio.png" alt="Alex-Header" class="header">
+        <nav>
+            <ul>
+                <li><a href="#portafolio">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a
+                        href="https://drive.google.com/uc?export=download&id=1hBitwaDWUmck7gSDdHsRUxwu1TGl30tj">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="home-area">
+        <div class="container">
+            <h1 class="Page-Title">
+                Portafolio
+            </h1>
+            <div class="container">
+                <section class="about">
+                    <div class="home-about-texbox">
+                        <h1 id="about">Who I am</h1>
+                        <p>My name is <strong>Alejandro Bahena</strong>: Welcome to my portafolio page,
+                            in this page you will find a variety of different projects that I have developed.
+                            I am sure that one of them would be helpful for one of those great ideas that you have to
+                            implement
+                            for your company web page, so check it out! If you want to see more, please <strong>go to my
+                                profile.</strong>
+                            <a target="_blank" href="https://github.com/AlejandroBahSan/">"Github"</a>
+                        </p></br>
+
+                        <p>- To download my resume, please click on Resume.</p>
+                    </div>
+                </section>
+            </div>
+            <a href="#work" class="button button-one">My Work</a>
+        </div>
+    </section>
+
+
+    <section id="work" class="portfolio">
+        <h1>Some of my work.</h1>
+
+        <!-- Portafolio Item 01 -->
+        <figure class="port-alone">
+            <img class="coder" src="./img/WeatherDashboard.jpg" alt="item-01">
+            <figcation class="port-desc1">
+                <p>Weather Dashboard</p>
+                <a target="_blank" href="https://alejandrobahsan.github.io/Intl-Weather-Dashboard/"
+                    class="button button-accent button-small">Project Deployed</a>
+                    <a target="_blank" href="https://github.com/AlejandroBahSan/Intl-Weather-Dashboard"
+                    class="button button-accent button-small">Github Repository</a>
+            </figcation>
+        </figure>
+
+        <!-- Portafolio Item 02 -->
+        <figure class="port-item">
+            <img class='port-img' src="./img/DayScheduler.jpg" alt="item-02">
+            <figcation class="port-desc">
+                <p>Day Schudeler</p>
+                <a target="_blank" href="https://alejandrobahsan.github.io/Day-Planner/"
+                    class="button button-accent button-small">Project Deployed</a>
+                    <a target="_blank" href="https://github.com/AlejandroBahSan/Day-Planner"
+                    class="button button-accent button-small">Github Repository</a>
+            </figcation>
+        </figure>
+
+        <!-- Portafolio Item 03 -->
+        <figure class="port-item">
+            <img class='port-img' src="./img/CodeQuiz.jpg" alt="item-03">
+            <figcation class="port-desc">
+                <p>Code Quiz</p>
+                <a target="_blank" href="https://alejandrobahsan.github.io/CodeQuiz/" class="button button-accent button-small">Project Deployed</a>
+                <a target="_blank" href="https://github.com/AlejandroBahSan/CodeQuiz" class="button button-accent button-small">Github Repository</a>
+            </figcation>
+        </figure class="port-item">
+
+        <!-- Portafolio Item 04 -->
+        <figure class="port-item">
+            <img class='port-img' src="./img/PWDGenerator.jpg" alt="item-04">
+            <figcation class="port-desc">
+                <p>Password Generator</p>
+                <a target="_blank" href="https://alejandrobahsan.github.io/CodeQuiz/" class="button button-accent button-small">Project Deployed</a>
+                <a target="_blank" href="https://github.com/AlejandroBahSan/CodeQuiz" class="button button-accent button-small">Github Repository</a>
+            </figcation>
+        </figure>
+
+        <!-- Portafolio Item 05 -->
+        <figure class="port-item">
+            <img class='port-img' src="./img/Cheat-Sheet.jpg" alt="item-05">
+            <figcation class="port-desc">
+                <p>Cheat Sheet</p>
+                <a target="_blank" href=" https://alejandrobahsan.github.io/Cheat-Sheet/ " class="button button-accent button-small">Project Deployed</a>
+                <a href="https://github.com/AlejandroBahSan/Cheat-Sheet" class="button button-accent button-small">Github Repository</a>
+            </figcation>
+        </figure>
+
+
+        <footer>
+            <div class="footer">
+                <p>
+                    Contact me.
+                </p>
+
+            </div>
+            <div class="contact" id="contact">
+                <ul class="unstyled-list">
+                    <li><a href="https://github.com/AlejandroBahSan/"><strong>Github</strong></a></li>
+                    <li><a href="mailto: alejandro.bahsan@gmail.com"><strong>Email</strong></a></li>
+                    <li><a href="https://www.linkedin.com/in/alejandro-b-sandoval/"><strong>Linkedin</strong></a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            }
+            else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
